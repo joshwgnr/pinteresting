@@ -1,4 +1,5 @@
 Pinteresting::Application.routes.draw do
+  devise_for :users
   root "pages#home"
   get "gym" => "pages#gymsupport" # Creates gym_path
   get "about" => "pages#about"  # Creates about_path
